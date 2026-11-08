@@ -1,3 +1,9 @@
-# Skills book
+# Skills-book
 
-A useful agents skills
+A useful agents skills.
+
+## Install
+
+```shell
+npx skills add wattanar/skills-book
+```
