@@ -7,3 +7,6 @@ A useful agents skills.
 ```shell
 npx skills add wattanar/skills-book
 ```
+## Lists
+
+- https://github.com/heydamir/unslop
