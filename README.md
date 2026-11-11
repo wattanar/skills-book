@@ -7,6 +7,7 @@ A useful agents skills.
 ```shell
 npx skills add wattanar/skills-book
 ```
-## Lists
+## Lists of skills
 
-- https://github.com/heydamir/unslop
+- https://github.com/GoogleChrome/modern-web-guidance `npx modern-web-guidance@latest install`
+- https://github.com/backnotprop/pstack `npx skills add backnotprop/pstack`
