@@ -1,4 +1,3 @@
-
 ---
 name: meaningful-application-logging
 description: Analyze application logging, reconstruct execution and business process flows, identify observability gaps, establish consistent logging standards, and implement structured, actionable logs for production debugging and incident investigation.
