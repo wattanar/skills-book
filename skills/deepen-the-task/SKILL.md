@@ -1,119 +1,131 @@
 ---
 name: deepen-the-task
-description: Deepen a task or prompt without expanding its scope. Identify what a top professional would do that the request overlooks, the rawest primary materials they would investigate, the specific methods and tools they would use, and independent evidence that would establish correctness. Then rewrite the original prompt into a more rigorous, actionable prompt.
+description: Transform shallow tasks and prompts into professionally rigorous, evidence-driven, independently verifiable tasks without unnecessarily expanding their scope. Identify professional gaps, primary source materials, domain-specific methods and tools, and objective verification criteria before producing a ready-to-use rewritten prompt.
 ---
 
 # Deepen the Task
 
 ## Objective
 
-Transform an existing task or prompt into a deeper, more rigorous, and professionally grounded version without making it unnecessarily larger.
+Transform an existing task, specification, or prompt into a deeper, more rigorous, and professionally grounded version without unnecessarily expanding its scope.
 
-The goal is **depth, not scope expansion**.
+The goal is **depth, not size**.
 
-Do not simply add more requirements, longer explanations, additional deliverables, or generic best practices.
+Improve the quality of the work by identifying what an exceptional professional would investigate, what evidence they would examine, which methods they would apply, and how the result could be independently verified.
 
-Instead, identify what is missing from the original request that would materially improve the quality, accuracy, reliability, and defensibility of the result.
+Do not confuse a longer prompt with a better prompt.
 
-Think like a top professional who is responsible for producing work that can withstand independent scrutiny.
+The output must make the next execution materially more accurate, reliable, and defensible.
 
 ## Core Principles
 
-1. **Depth over breadth** — Investigate the important dimensions more thoroughly instead of introducing unrelated work.
-2. **Primary evidence over summaries** — Prefer original source material over documentation, summaries, tutorials, or previously interpreted information.
-3. **Professional judgment over generic checklists** — Identify what an experienced practitioner would actually investigate and why.
-4. **Methods over vague intentions** — Specify concrete techniques, tools, and procedures.
-5. **Independent verification over self-assessment** — Define evidence that can demonstrate whether the result is correct without relying solely on the agent's claims.
+1. **Depth over breadth** — Investigate important dimensions more thoroughly instead of introducing unrelated work.
+2. **Professional judgment over generic advice** — Think like an experienced specialist responsible for the outcome.
+3. **Primary evidence over summaries** — Prefer original source materials over already-processed interpretations.
+4. **Methods over intentions** — Specify concrete investigative techniques and tools.
+5. **Independent verification over self-assessment** — Establish objective evidence of correctness.
 6. **Scope preservation** — Preserve the original objective, constraints, and intended deliverables.
-7. **Evidence before conclusions** — Do not invent findings, assume facts, or present unverified hypotheses as established truth.
+7. **Evidence before conclusions** — Distinguish verified facts, assumptions, hypotheses, and recommendations.
 
 ## Workflow
 
-Before rewriting the original prompt, complete the following four steps.
+Complete the following four analytical steps before rewriting the original prompt.
 
-### 1. Identify the Professional Gap
+### 1. Professional Perspective
 
 Ask:
 
-"What would a top professional in this field do here that the original request does not ask for?"
+"What would a top professional in this field do that the original request does not explicitly ask for?"
 
-Identify the highest-value missing activities.
+Identify the most important missing professional activities.
 
 Consider:
 
-- Critical investigations that are currently overlooked.
+- Overlooked investigations and critical considerations.
 - Hidden assumptions that need to be challenged.
-- Failure modes and edge cases that require examination.
-- Relevant domain-specific standards and established practices.
-- Dependencies, constraints, and interactions that affect the outcome.
-- Important distinctions between apparent correctness and actual correctness.
+- Important edge cases and failure modes.
+- Dependencies and interactions that affect the outcome.
+- Domain-specific standards and established methodologies.
+- Differences between apparent correctness and actual correctness.
+- Risks that an inexperienced practitioner might overlook.
 
-Requirements:
+For each identified gap:
 
-- Think from the perspective of an experienced specialist, not a general-purpose assistant.
-- Identify concrete missing work, not generic suggestions.
-- Explain why each missing activity matters.
-- Prioritize only activities that materially improve the original task.
+1. Explain what the professional would do.
+2. Explain why it matters.
+3. Describe the potential impact of overlooking it.
+4. Prioritize its importance.
 
-### 2. Identify the Rawest Source Material
+Focus on high-impact improvements rather than generating a large checklist.
+
+### 2. Primary Evidence and Raw Materials
 
 Ask:
 
-"What is the rawest material a top professional would start from instead of what has already been digested for me?"
+"What is the rawest and most authoritative material a professional would start from instead of what has already been digested?"
 
 Identify the closest available sources to the underlying truth.
 
-Prefer, where applicable:
+Prefer primary evidence where appropriate.
 
-- Original source code over architecture summaries.
-- Raw production logs over incident summaries.
-- Database records and query execution plans over dashboard interpretations.
-- Original research papers over blog posts.
-- Primary datasets over published charts.
-- Protocol specifications over secondary explanations.
-- Original contracts and regulations over informal interpretations.
-- Direct measurements over estimates.
-- Reproducible observations over assumptions.
+Examples:
 
-For each source, explain:
+- Original source code rather than architecture summaries.
+- Raw production logs rather than incident summaries.
+- Database records and execution plans rather than dashboard interpretations.
+- Original research papers rather than blog posts.
+- Primary datasets rather than published charts.
+- Protocol specifications rather than secondary explanations.
+- Original contracts and regulations rather than informal interpretations.
+- Direct measurements rather than estimates.
+- Reproducible observations rather than assumptions.
+
+For each important source, explain:
 
 1. What should be examined.
-2. Why it is more authoritative than processed information.
-3. What evidence or insight it could reveal.
+2. Why it is authoritative.
+3. What information it could reveal.
 4. What limitations or biases it may contain.
 
-Do not assume that rawer always means better. Select sources appropriate to the domain and research question.
+Do not assume that rawer always means better. Select sources according to their relevance, reliability, and proximity to the question being investigated.
 
-### 3. Specify Methods and Tools
+If primary evidence is unavailable, identify the best available alternative and explicitly state its limitations.
+
+### 3. Methods and Tools
 
 Ask:
 
-"What specific methods and tools would a top professional use to investigate and execute this task?"
+"What specific methods, techniques, and tools would a top professional use to investigate and execute this task?"
 
-Identify practical, domain-specific techniques.
+Identify practical, domain-specific methods.
 
 Consider:
 
-- Analytical and investigative methods.
-- Experimental or testing procedures.
-- Measurement and validation techniques.
+- Analytical and investigative techniques.
+- Experimental and testing procedures.
+- Measurement and validation methods.
 - Relevant standards and specifications.
 - Software, frameworks, command-line tools, and specialized equipment.
 - Reproducibility and evidence collection.
 - Techniques for challenging alternative explanations.
 
-For every important method or tool, explain:
+For every important method or tool, specify:
 
-1. What it is used for.
-2. What question it answers.
-3. What evidence it produces.
-4. Why it is appropriate for this particular task.
+1. What it does.
+2. Why it is appropriate.
+3. What question it answers.
+4. What evidence or output it produces.
 
-Avoid generic recommendations such as "use modern tools", "perform thorough testing", or "follow best practices" without specifying how.
+Requirements:
 
-Do not recommend tools merely because they are popular. Choose them based on the task.
+- Recommend concrete tools instead of vague categories.
+- Explain the purpose of each important tool.
+- Prefer established methods over fashionable tools.
+- Avoid unnecessary tools that do not materially improve the investigation.
+- Do not fabricate tool capabilities or standards.
+- Account for practical constraints such as environment, access, cost, and available data.
 
-### 4. Define Independent Verification
+### 4. Independent Verification
 
 Ask:
 
@@ -121,7 +133,7 @@ Ask:
 
 Define objective acceptance criteria and independent evidence.
 
-Depending on the domain, this may include:
+Depending on the domain, consider:
 
 - Reproducible experiments.
 - Automated test results.
@@ -136,21 +148,25 @@ Depending on the domain, this may include:
 
 Distinguish between:
 
-- Evidence that supports the conclusion.
-- Evidence that could falsify the conclusion.
-- Evidence that remains unavailable or inconclusive.
+- **Supporting evidence:** Evidence that supports the conclusion.
+- **Falsifying evidence:** Evidence that could demonstrate the conclusion is wrong.
+- **Inconclusive evidence:** Evidence that is insufficient to establish correctness.
 
-Requirements:
+For each verification criterion, define:
 
-- Define observable acceptance criteria.
-- Identify independent sources of truth.
-- Specify how conflicting evidence should be handled.
-- Never treat the agent's own explanation as proof of correctness.
-- Never claim verification that has not actually occurred.
+1. What must be demonstrated.
+2. How it will be tested or measured.
+3. What constitutes passing or failing.
+4. Which independent source establishes the result.
+5. What limitations remain.
+
+Never treat the agent's own explanation as proof of correctness.
+
+Never claim verification that has not actually occurred.
 
 ## Prompt Reconstruction
 
-After completing all four steps, rewrite the original prompt.
+After completing all four analytical steps, rewrite the original prompt.
 
 The rewritten prompt must:
 
@@ -159,35 +175,46 @@ The rewritten prompt must:
 3. Direct the investigation toward primary evidence.
 4. Specify appropriate methods and tools.
 5. Define objective verification criteria.
-6. Make the expected deliverables explicit.
-7. Preserve original constraints and scope.
-8. Remove ambiguity where it could affect execution.
+6. Make expected deliverables explicit.
+7. Include relevant constraints and edge cases.
+8. Remove ambiguity that could compromise execution.
+9. Remain proportional to the original task.
 
-The rewritten prompt should be directly executable by another capable agent or professional without requiring them to reconstruct the intended methodology.
+The rewritten prompt must be directly executable by another capable agent or professional without requiring them to reconstruct the intended methodology.
 
 ## Output Format
 
-Always structure the response in the following order.
+Always present the result in the following order.
 
 ### 1. What a Top Professional Would Do
 
-Explain the most important missing professional activities and why they matter.
+Describe the missing professional activities, why they matter, and their expected impact.
+
+Use normal readable Markdown.
 
 ### 2. Raw Materials to Start From
 
-List the primary sources, raw data, original artifacts, and evidence that should be examined.
+Identify the primary evidence, original artifacts, raw data, and authoritative sources that should be examined.
 
 Explain why these are preferable to already-digested information.
 
+Use normal readable Markdown.
+
 ### 3. Methods and Tools
 
-Specify the investigative methods, tools, and procedures, including their purpose and expected evidence.
+Specify the investigative methods, techniques, tools, and procedures.
+
+Explain their purpose and expected evidence.
+
+Use normal readable Markdown.
 
 ### 4. Independent Verification
 
 Define how correctness will be established independently.
 
-Include measurable acceptance criteria and possible falsification conditions.
+Include measurable acceptance criteria, independent evidence, and possible falsification conditions.
+
+Use normal readable Markdown.
 
 ### 5. Rewritten Prompt
 
@@ -195,32 +222,62 @@ Provide one complete, polished, ready-to-use prompt.
 
 The rewritten prompt must incorporate the findings from the preceding four sections.
 
+#### Raw Markdown Output Requirement
+
+The rewritten prompt MUST be presented as a standalone raw Markdown code block.
+
+Requirements:
+
+- Use standard Markdown syntax only.
+- Do not render the rewritten prompt as rich text.
+- Do not wrap it in HTML, XML, or other markup formats.
+- Do not include analysis or commentary inside the rewritten prompt.
+- Ensure the entire prompt can be copied and pasted without modification.
+- Include all necessary context, instructions, constraints, methods, and acceptance criteria.
+- Preserve Markdown formatting, including headings, lists, checkboxes, and code blocks.
+- Do not omit important details merely to make the prompt shorter.
+- Make the prompt self-contained and independently executable.
+
+The four analytical sections must remain outside the code block as normal readable Markdown.
+
+Only Section 5 should be enclosed in the standalone raw Markdown code block.
+
 ## Quality Control
 
-Before delivering the result, check:
+Before delivering the result, verify:
 
-- [ ] Did the analysis identify something genuinely important that the original request overlooked?
-- [ ] Did it identify primary evidence rather than merely recommending more documentation?
-- [ ] Are the methods and tools concrete and relevant to the domain?
-- [ ] Is there an independent way to establish correctness?
-- [ ] Are acceptance criteria observable and testable?
-- [ ] Does the rewritten prompt preserve the original objective?
-- [ ] Did the rewrite improve depth without unnecessarily expanding scope?
-- [ ] Can another competent agent execute the rewritten prompt without guessing the methodology?
+- [ ] The analysis identifies genuinely important gaps in the original request.
+- [ ] Professional recommendations are specific and relevant.
+- [ ] Primary evidence is preferred over processed summaries where appropriate.
+- [ ] Evidence sources have identifiable limitations.
+- [ ] Methods and tools are concrete and justified.
+- [ ] Independent verification is defined.
+- [ ] Acceptance criteria are observable and testable.
+- [ ] Potential falsifying evidence is considered.
+- [ ] The rewritten prompt preserves the original objective.
+- [ ] The rewrite improves depth without unnecessarily expanding scope.
+- [ ] Another competent professional or agent can execute the rewritten prompt without guessing the methodology.
+- [ ] The rewritten prompt is self-contained.
+- [ ] The rewritten prompt is provided in a standalone raw Markdown code block.
+- [ ] The analysis is outside the raw Markdown code block.
 
-If any criterion is not satisfied, improve the analysis before presenting the final prompt.
+If any criterion is not satisfied, improve the analysis before presenting the result.
 
 ## Behavioral Constraints
 
 - Do not execute the original task unless explicitly requested.
 - Do not rewrite the prompt before completing the four analytical steps.
 - Do not automatically turn every task into a large research project.
-- Do not add unrelated deliverables.
-- Do not mistake verbosity for rigor.
-- Do not fabricate tools, standards, sources, or verification results.
-- Clearly distinguish established facts, hypotheses, and recommendations.
-- If essential information is missing, state the uncertainty and identify what information would resolve it.
+- Do not introduce unrelated requirements or deliverables.
+- Do not confuse verbosity with rigor.
+- Do not fabricate findings, evidence, tools, or standards.
+- Clearly distinguish facts, assumptions, hypotheses, and recommendations.
+- If essential information is missing, state the uncertainty and identify what would resolve it.
 - Prefer a small number of high-impact improvements over a large list of generic suggestions.
+- Do not claim that external verification has occurred when it has not.
+- Do not force all four analytical steps into artificial or irrelevant recommendations when a particular step has limited applicability. Explain why instead.
+- Do not ask unnecessary clarification questions when reasonable assumptions can be stated explicitly.
+- Preserve the user's original language unless there is a clear reason to change it.
 
 ## Success Criteria
 
@@ -231,6 +288,7 @@ It is a prompt that causes the next agent or professional to:
 - Investigate something they would otherwise overlook.
 - Examine stronger evidence than they would otherwise use.
 - Apply more appropriate investigative methods.
+- Challenge assumptions and alternative explanations.
 - Produce results that can be independently verified.
 
-**The ultimate test: Does the rewritten prompt produce materially more trustworthy work without unnecessarily increasing the scope of the task?**
+**Ultimate test: Does the rewritten prompt produce materially more trustworthy, accurate, and defensible work without unnecessarily increasing the scope of the original task?**
