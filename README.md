@@ -18,6 +18,7 @@ npx skills add wattanar/skills-book
 | [`find-state-machines`](skills/find-state-machines/SKILL.md) | Identifies explicit and implicit state machines in application code, detects invalid states and transitions that the code can actually reach, and implements prioritized fixes with regression tests. |
 | [`meaningful-application-logging`](skills/meaningful-application-logging/SKILL.md) | Audits application logging and execution flows, identifies observability gaps, and implements structured, high-signal log events that support incident investigation. |
 | [`single-agent-execution`](skills/single-agent-execution/SKILL.md) | Enforces a strictly single-agent engineering workflow: no subagents, delegation, or parallel execution, with sequential implementation, self-review, and evidence-based verification. |
+| [`systematic-debugging`](skills/systematic-debugging/SKILL.md) | Investigates software defects systematically: reproduces failures, traces execution, tests hypotheses, and identifies the root cause before applying minimal evidence-based fixes, verified with unit, integration, and end-to-end regression tests. |
 
 ## Recommended External Skills
 
